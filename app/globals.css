@@ -1,4 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@font-face {
+  font-family: font1;
+  src: url(../public/fonts/Lausanne-300.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/fonts/Lausanne-500.woff2);
+}
 
 :root {
   --background: #ffffff;
@@ -14,8 +23,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: black;
+  }
+}
+
+.moveLink {
+  opacity: 0;
+  transition: all ease-in 0.3s;
+}
+.Link:hover .moveLink {
+  opacity: 1;
+}
+
+.moveX {
+  animation-name: moveAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
 
