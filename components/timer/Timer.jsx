@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 
-const Timer = ({ ref }) => {
+const Timer = () => {
   const [time, setTime] = useState('');
 
   useEffect(() => {

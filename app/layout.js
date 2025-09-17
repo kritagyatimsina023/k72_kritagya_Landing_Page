@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        <Staris>
-          <NavContext>{children}</NavContext>
-        </Staris>
+        <NavContext>
+          <Staris>{children}</Staris>
+        </NavContext>
       </body>
     </html>
   );

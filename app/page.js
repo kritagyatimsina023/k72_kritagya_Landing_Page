@@ -1,6 +1,6 @@
 'use client';
 
-import Homes from '@/pages/Homes';
+import Homes from '@/pagees/Homes';
 import Staris from '@/components/common/staris';
 
 export default function Home() {

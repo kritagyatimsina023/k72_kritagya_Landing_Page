@@ -9,7 +9,6 @@ import { useLocation } from 'react-router-dom';
 const Staris = ({ children }) => {
   const currentPath = usePathname();
   const stairRef = useRef(null);
-
   const pageRef = useRef(null);
   useGSAP(() => {
     const tl = gsap.timeline();

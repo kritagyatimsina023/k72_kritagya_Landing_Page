@@ -1,4 +1,4 @@
-import Project from '@/pages/Project';
+import Project from '@/pagees/Project';
 import React from 'react';
 
 const ProjectPage = () => {
